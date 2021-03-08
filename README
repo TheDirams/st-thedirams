@@ -1,34 +1,35 @@
-st - simple terminal
---------------------
-st is a simple terminal emulator for X which sucks less.
+#TheDirams's fork of st (Simple Terminal)
 
+[st](https://st.suckless.org/) is one of the best and minimalist
+terminal emulator on linux
 
-Requirements
-------------
-In order to build st you need the Xlib header files.
+#Bindings
 
++ `Ctrl+Shift+K`     zoom-in
++ `Ctrl+Shift+J`     zoom-out
++ `Ctrl+Shift+Space` zoom-reset
++ `Ctrl+c`           copy
++ `Ctrl+p`           paste
 
-Installation
-------------
-Edit config.mk to match your local setup (st is installed into
-the /usr/local namespace by default).
+#Patches
 
-Afterwards enter the following command to build and install st (if
-necessary as root):
++ Boxdraw
++ Ligatures
++ font2
++ scrollback-mouse
++ vertcenter
++ workingdir
 
-    make clean install
+#Installation
 
+```
+git clone https://github.com/TheDirams/st-thedirams
+cd st-thedirams
+sudo make clean install
+```
 
-Running st
-----------
-If you did not install st with make clean install, you must compile
-the st terminfo entry with the following command:
-
-    tic -sx st.info
-
-See the man page for additional details.
-
-Credits
--------
-Based on Aurélien APTEL <aurelien dot aptel at gmail dot com> bt source code.
-
+#N.B
+If st crashes when displaying emojis/special characters
+install [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) from the AUR.
+This build of st uses the JoyPixels emojis font, so be sure if it is installed on
+your system
