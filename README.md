@@ -5,11 +5,11 @@ terminal emulator on linux
 
 ## Bindings
 
-+ `Ctrl+Shift+K`     zoom-in
-+ `Ctrl+Shift+J`     zoom-out
-+ `Ctrl+Shift+Space` zoom-reset
-+ `Ctrl+c`           copy
-+ `Ctrl+p`           paste
++ `Alt+Shift+K`     zoom-in
++ `Alt+Shift+J`     zoom-out
++ `Alt+Shift+Space` zoom-reset
++ `Alt+c`           copy
++ `Alt+p`           paste
 
 ## Patches
 
@@ -33,3 +33,6 @@ If st crashes when displaying emojis/special characters
 install [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) from the AUR.
 This build of st uses the JoyPixels emojis font, so be sure if it is installed on
 your system
+
+## Update 
+This build uses NerdFont for Glyphs.
